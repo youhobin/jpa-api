@@ -51,6 +51,7 @@ public class MemberApiController {
         return new CreateMemberResponse(id);
     }
 
+    //api 스펙을 위한 dto를 사용해야한다.. //
     @PostMapping("/api/v2/members")
     public CreateMemberResponse saveMemberV2(@RequestBody @Valid CreateMemberRequest request) {
 
